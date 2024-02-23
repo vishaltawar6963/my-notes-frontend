@@ -32,7 +32,80 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+.backgroundAnimation {
+
+ background: rgba(241, 159, 6, 0.418);
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+
+
+
+
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body{
+  background: rgba(241, 159, 6, 0.418);
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+
+
+
+
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+.bg-blurr ,  .dropdown-menu   {
+  backdrop-filter: blur(20px); 
+  background-color: rgb(236 225 225 / 30%);
+  color: white;
+}
+ input.bg-blurr:focus,textarea.bg-blurr:focus {
+  backdrop-filter: blur(20px);
+  background-color: rgba(236, 225, 225, 0.36);
+  /* color: azure; */
+  border: none;
+box-shadow: none;
+
+}
+button.bg-blurr:hover{
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* .backgroundAnimation{
+  animation: backgroundAnimation 10s infinite alternate;
+  backdrop-filter: blur(20px); 
+  background-color: rgba(0, 0, 0, 0.8); 
+ } */
+/* @keyframes backgroundAnimatio {
+  0% {
+    backdrop-filter: blur(10px);
+  }
+  100% {
+    backdrop-filter: blur(20px); 
+  }
+} */
